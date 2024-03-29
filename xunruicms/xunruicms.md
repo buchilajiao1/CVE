@@ -13,16 +13,16 @@ Xunruicms<=v4.6.3
 
 ## Vulnerability Description AND recurrence:
 (1) There is a filter for xss in the Security.php file in the catalog \XunRuiCMS\dayrui\Fcms\Library\.
-![1](\1.png)
+![1](./1.png)
 
 But it only filters for normal xss scripts.
 (2) Local environment can be found in the login situation of the user-agent filtering
 
-![4](\4.png)
+![4](./4.png)
 
 (3) Tested using a mutated xss payload:
 `User-Agent:"><svg/onload=alert(1)//`
-![2](\2.png)
+![2](./2.png)
 
 (4) Go to background profile modification->login record, and found that triggering storage shape XSS
-![3](\3.png)
+![3](./3.png)
