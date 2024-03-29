@@ -19,8 +19,9 @@ But it only filters for normal xss scripts.
 (2) Local environment can be found in the login situation of the user-agent filtering
 ![4](./4.png)
 
-(3) Tested using a mutated xss payload:
+(3) The packet in the backend login screen is tested with a mutated xss payload:
 `User-Agent:"><svg/onload=alert(1)//`
+![6](./6.png)
 ![2](./2.png)
 
 (4) Go to background profile modification->login record, and found that triggering storage shape XSS
