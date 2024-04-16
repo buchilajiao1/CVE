@@ -1,5 +1,8 @@
 # XSS exists in Xunrui CMS v4.6.3 and below
 
+## CVE-ID : 
+CVE-2024-31634
+
 ## Vulnerability Type : 
 Stored XSS
 
